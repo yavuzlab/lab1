@@ -1,0 +1,36 @@
+div#box{
+    height: 500px;
+    width: 500px;
+    border:  2px solid black;
+    margin: 100px auto;
+
+}
+
+div#ball{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    box-shadow: 5px 5px blur  spead black;
+    border-radius: 50%;
+    animation-name: movingball;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+#ball:hover{
+    animation-play-state: paused
+}
+@keyframes movingball{
+    0%{ top: 0px; left:0}
+    25%{ top: 0px; left: 400px;}
+    50%{ top: 400px; left: 400px;}
+    75%{ top: 400px; left: 0px}
+    100%{ top: 0px; left:0px}
+
+}
